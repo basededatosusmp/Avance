@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C82C080B-6A3E-1815-C087-1F8D83517A71" name="TarjetaPropiedad">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 03:10:19 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Numero Serie" id="9E004536-02A0-95C9-DBE3-B486DF6E64AB">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 03:10:28 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16 BYTE</dataTypeSize>
+<ownDataTypeParameters>16 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Num Motor" id="165692D0-E547-5DC8-57A3-A8F5FC83FE1F">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 03:12:12 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Placa Rodaje" id="532A655B-278B-668A-746D-FB64E35D8D05">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 03:10:28 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Num vin" id="A9998B26-5DFC-004E-9CC5-C0F491AE4D73">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 03:15:40 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Placa Vigente" id="206A2515-B131-9CBB-DA5E-CDD8BC605FB3">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 03:14:46 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Placa Anterior" id="9FF68E26-9B07-291B-FE45-F030289FA7EB">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 03:15:05 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="82EFF245-F191-1D01-D04F-15947D23C727">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 03:17:47 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Anotaciones" id="B0E23C29-145D-2BB2-437F-22233653311D">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 03:18:04 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cliente CodCliente" id="252FB880-B2EE-DA11-C287-F4D13B732110">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:27:28 UTC</createdTime>
+<generatorID>96635131-32AA-33FB-E8B3-BA812347338E</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<referedAttribute>CD9EB734-E3D6-C32F-DA0F-EDBA3C232917</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StockCamionetas CodCami" id="128CF5F8-AAB9-DF30-6936-17EA1CF946C9">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 01:34:47 UTC</createdTime>
+<generatorID>BDFFB0CD-BF5F-4850-3AE1-F02FDB5214C4</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<referedAttribute>1A5CAE45-C179-9280-DE3D-63695ECD8A99</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9E61AA4-E64F-CCC6-D90B-9ED1BEEC6646" name="TarjetaPropiedad_PK">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 03:10:51 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9E004536-02A0-95C9-DBE3-B486DF6E64AB</attributeRef>
+<attributeRef>165692D0-E547-5DC8-57A3-A8F5FC83FE1F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

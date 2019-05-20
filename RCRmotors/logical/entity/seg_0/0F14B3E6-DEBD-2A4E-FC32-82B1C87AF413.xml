@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F14B3E6-DEBD-2A4E-FC32-82B1C87AF413" name="Cliente TarCred">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-03 19:46:36 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>7994AA11-FDAE-7C08-BB65-6D3BA1F511C5</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tipoMone cli TarCred" id="800A86B3-183A-9FED-1ED4-A40090C1D6A7">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-03 20:13:38 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipoPag cli tarCred" id="60984E01-9FD8-290B-7ED5-2A9D9A40A00C">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-03 20:13:40 UTC</createdTime>
+<comment>En cuotas o Directo</comment>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

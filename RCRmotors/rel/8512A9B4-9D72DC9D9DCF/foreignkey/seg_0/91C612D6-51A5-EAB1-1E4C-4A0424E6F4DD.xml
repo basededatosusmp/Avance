@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="91C612D6-51A5-EAB1-1E4C-4A0424E6F4DD" containerWithKeyObject="2E632513-762E-F948-5199-F212E8DA5C52" localFKIndex="29313455-74BB-E6C8-CB30-63F5F4827461" name="TarProp_StockCamionetas_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>BDFFB0CD-BF5F-4850-3AE1-F02FDB5214C4</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<referredTableLongName>StockCamionetas</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>F947380D-7643-5A29-8021-20FA81981820</referredTableID>
+<keyObject>D963B061-9604-602A-3834-EFD2E95905FD</keyObject>
+<referredKeyID>D963B061-9604-602A-3834-EFD2E95905FD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CodCami</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

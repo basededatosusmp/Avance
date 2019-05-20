@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4EC0CE8B-CD4C-610D-89B3-8516B5322DA9" containerWithKeyObject="C1029A25-FB47-C0DF-2D02-E42333447E13" localFKIndex="FE39D953-0020-3C1D-D567-13009B9329EA" name="Pre-Entrega_Comprobante_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>17D4D836-C8D5-8BD8-85B6-BD9022DAFF95</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<referredTableLongName>Comprobante</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>F2F437EB-2B70-992E-2F84-7023E2E75621</referredTableID>
+<keyObject>7ECB2609-EEF2-E554-B625-485D4156A75F</keyObject>
+<referredKeyID>7ECB2609-EEF2-E554-B625-485D4156A75F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Cod_comprobante</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

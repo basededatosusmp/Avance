@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2F437EB-2B70-992E-2F84-7023E2E75621" name="Comprobante">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>1B8C596D-0FED-4EAA-C0A9-A47706574D1A</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cod_comprobante" id="FB797315-2E2D-C5B6-2801-4259A64E535B">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>65776B9A-4365-1B3B-D536-3F37E06C1C56</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_CodCliente" id="C9B91A69-BDE6-7C74-A10D-C47D896D81F7">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>72E57268-E166-1E41-6EE5-95DCE85437E5</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D706BB6-D6FB-2C03-F71C-814D606ECB14" referredColumn="ECB529A8-B73C-DC92-F796-403C8565939D"/>
+</associations>
+</Column>
+<Column name="StockCamionetas_CodCami" id="CF36BE2D-1D51-B13D-86CD-EEBB6027761A">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>15EA9610-3ABC-341F-A20F-482B7055A04A</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4CE31CA6-0348-16B1-14CD-083C7D401633" referredColumn="BA352381-7A27-3A19-25B9-5C41602E12D1"/>
+</associations>
+</Column>
+<Column name="Vendedor_CodVen" id="53F33C99-9F8A-5EF8-5D31-D8FAD580B471">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>D31ADC4D-AFAB-88AA-4FAE-772ACFD1B9C3</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63A31D0A-1017-D7F5-CCB7-B7D42BBAB955" referredColumn="D7726BE8-52C2-D1D1-789E-5D81614B8214"/>
+</associations>
+</Column>
+<Column name="Tienda_CodTienda" id="A877627E-7FC5-842C-2E75-18121738EA16">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>21EEE368-7A5A-D714-A312-2CF3A9BDDD88</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="334AC90D-3C33-85B1-54D1-52F4BB140C62" referredColumn="A86FDE38-F4C5-A76B-2DAC-75AC30638B09"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7ECB2609-EEF2-E554-B625-485D4156A75F" name="Comprobante_PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>BAA1B5D0-4ABD-CD04-09F9-9BA8CE255C91</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB797315-2E2D-C5B6-2801-4259A64E535B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="454E6A24-D8CE-9C6B-574C-65B0D13A782B" name="Comprobante_Cliente_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>EFAFF9CF-D192-1459-4905-3C6CB70FF2CA</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9B91A69-BDE6-7C74-A10D-C47D896D81F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFBDDD62-35B0-E9F3-B706-EC471DB073E7" name="Comprobante_Vendedor_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>0AF5D717-1D20-BEBE-4FBB-E0349098ACDB</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53F33C99-9F8A-5EF8-5D31-D8FAD580B471"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2ADA204D-23A0-4397-C200-5EFDB176F496" name="Comprobante_StockCamionetas_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>AEAFDEE1-C97A-E20B-E1F1-21694ECF5B55</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF36BE2D-1D51-B13D-86CD-EEBB6027761A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="356DF8B0-E584-09D2-2CCD-35A55D96BC32" name="Comprobante_Tienda_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>1ED29366-19CD-47FA-2927-E4E64F5AED0C</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A877627E-7FC5-842C-2E75-18121738EA16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

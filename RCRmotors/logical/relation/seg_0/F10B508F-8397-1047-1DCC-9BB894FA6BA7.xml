@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="StockCamionetas Cliente FK" directorySegmentName="seg_0" id="F10B508F-8397-1047-1DCC-9BB894FA6BA7">
+<createdBy>Claudia Llamocca</createdBy>
+<createdTime>2019-04-24 04:29:06 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<sourcePk>4F007063-B32C-A8DF-CC6B-150027971BE3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7994AA11-FDAE-7C08-BB65-6D3BA1F511C5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2FF6CD7C-98E0-0702-46D5-837BB1CB94D5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

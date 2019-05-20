@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C1029A25-FB47-C0DF-2D02-E42333447E13" name="Pre-Entrega">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>3FFA7F16-BD62-21F4-1029-4E285C0C106A</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodCliente" id="88CD1602-5ACD-D45F-EE08-38CB91FCEB59">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>9D255312-17C7-9F0F-12C9-C02D635649E8</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="BCB9F02E-5502-A251-8433-FE1A8A6A904E">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<comment>Aprobado/Desaprobado</comment>
+<generatorID>E4E22CE6-48DB-F71F-B51A-2F3E5721F175</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comentarios" id="CC2714DB-FDC5-502F-A471-4A8754082937">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>E27AA67C-6B39-C3C8-7779-D1F7E18215E4</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comprobante_Cod_comprobante" id="A11B275D-5E13-31ED-5F0C-B882E556F9B0">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>74A16E6E-B7B8-81B4-48E2-7C6E80BDE340</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4EC0CE8B-CD4C-610D-89B3-8516B5322DA9" referredColumn="FB797315-2E2D-C5B6-2801-4259A64E535B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A4475C0-B891-65AF-E92F-9CB382628965" name="Pre-Entrega_PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>98D06E68-3EA9-6EF2-12D4-456A0F11C5E8</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88CD1602-5ACD-D45F-EE08-38CB91FCEB59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE39D953-0020-3C1D-D567-13009B9329EA" name="Pre-Entrega_Comprobante_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>17D4D836-C8D5-8BD8-85B6-BD9022DAFF95</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A11B275D-5E13-31ED-5F0C-B882E556F9B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

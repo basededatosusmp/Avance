@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26D84934-3FE1-4A82-85A9-F2EBBEE5981E" name="Cliente_MultiOpcion">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>467C9E65-0BCC-B328-057B-1D56E76FA8DE</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodCliente" id="98ECD41B-D3BA-54ED-8FC8-32B19FB0B093">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>CD9EB734-E3D6-C32F-DA0F-EDBA3C232917</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7B81D99-D7C5-968A-2CE6-A9F8D9E16F91" referredColumn="ECB529A8-B73C-DC92-F796-403C8565939D"/>
+</associations>
+</Column>
+<Column name="TPagoMensual_Cli_multiOpcion" id="0DB5362C-3382-EE23-5A88-47BAC6D03765">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<comment>12, 18 o 24 meses</comment>
+<generatorID>C96456B8-A463-0977-AE0F-30F95A9FB1BB</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipoMoneda" id="37AAC07C-8731-33F8-6345-5E6895FC09FF">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>C5F2AA3C-9FCC-CE5F-E9E8-F500FF035D69</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B08162F0-8330-AD19-A80B-4C776E1F6590" name="Cliente_MultiOpcion_PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>4F007063-B32C-A8DF-CC6B-150027971BE3</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98ECD41B-D3BA-54ED-8FC8-32B19FB0B093"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00FE961C-6598-7D7C-7BC1-AF46C6D77AAE" name="Cliente_MultiOpcion_Cliente_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>449F0F6C-5642-BF2B-6526-ECCE70EBC403</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98ECD41B-D3BA-54ED-8FC8-32B19FB0B093"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

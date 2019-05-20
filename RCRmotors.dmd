@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="RCRmotors" id="22CE0CF8-5C50-4C3D-18AF-C8D369CEBD7E" version="3.5">
+<createdBy>Claudia Llamocca</createdBy>
+<createdTime>2019-04-24 03:56:47 UTC</createdTime>
+<ownerDesignName>RCR MOTORS</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>22CE0CF8-5C50-4C3D-18AF-C8D369CEBD7E</designId>
+</OSDM_Design>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DDE850DE-E54E-1171-A6BF-A75E4CDC4E36" name="Cliente_Efectivo">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>223564ED-99EB-271E-F4A9-1EEAE13712B2</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodCliente" id="4084A9FA-9A47-7B0B-DDD7-3EA1C9C6AE9E">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>CD9EB734-E3D6-C32F-DA0F-EDBA3C232917</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="791AB8CB-3882-901A-5FE8-48F7A2CBDBCA" referredColumn="ECB529A8-B73C-DC92-F796-403C8565939D"/>
+</associations>
+</Column>
+<Column name="TipoMon_Cli_Efec" id="C4358621-E804-B230-9FF2-2E983F887D52">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>61E206EE-819E-D741-63CB-9935572B342C</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipoPag_Cli_efec" id="AAB85AE2-42F2-2D83-C0D3-2DB8141BF361">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<comment>Cuotas o directo</comment>
+<generatorID>1D26FE81-0BC1-CD9E-8B47-03F000EACFDD</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C49E57B0-3244-B895-205E-AF3A45FAA653" name="Cliente_Efectivo_PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>4F007063-B32C-A8DF-CC6B-150027971BE3</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4084A9FA-9A47-7B0B-DDD7-3EA1C9C6AE9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9246373-300B-F6B7-5BFA-715DD4F82AF5" name="Cliente_Efectivo_Cliente_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>E07008F5-6DF6-4624-BD34-88E4261DCE7C</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4084A9FA-9A47-7B0B-DDD7-3EA1C9C6AE9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

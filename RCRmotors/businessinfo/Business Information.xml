@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="D65CDF90-D40E-86DB-4E95-A9FE129A0187">
+<createdBy>Claudia Llamocca</createdBy>
+<createdTime>2019-04-24 03:56:48 UTC</createdTime>
+<ownerDesignName>RCR MOTORS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

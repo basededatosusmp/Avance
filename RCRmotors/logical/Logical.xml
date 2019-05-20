@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="4BE0DBB7-E9FE-437D-52B5-4081720C763F" mainViewID="2818146A-A7CF-81D4-B8A6-2DBC8F85C654">
+<createdBy>Claudia Llamocca</createdBy>
+<createdTime>2019-04-24 03:56:47 UTC</createdTime>
+<ownerDesignName>RCR MOTORS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Comprobante Vendedor FK" directorySegmentName="seg_0" id="0AF5D717-1D20-BEBE-4FBB-E0349098ACDB">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:30:39 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<sourcePk>1D25D9BA-0727-EC09-2A6C-12D3004FD740</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>83D0D32C-75CC-7A09-DB64-02E1EA20CBAE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B8C596D-0FED-4EAA-C0A9-A47706574D1A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

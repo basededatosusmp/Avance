@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BDC1B388-0E00-D22C-6B8F-46BCF9388861" containerWithKeyObject="285AAC47-8017-B8C5-9CB8-8FF40A575E3F" localFKIndex="278D9DB6-ED55-9185-AB08-BCBBF6FA6097" name="Venta_Vendedor_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>76757306-8EBC-2EC5-E471-9907A70D14DC</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<referredTableLongName>Vendedor</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>B9AE6717-9A3E-CE6C-A069-7D998203EB26</referredTableID>
+<keyObject>E7C81460-C196-2BA9-98E6-23535F11F539</keyObject>
+<referredKeyID>E7C81460-C196-2BA9-98E6-23535F11F539</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CodVen</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TarjeProp Cliente FK" directorySegmentName="seg_0" id="96635131-32AA-33FB-E8B3-BA812347338E">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:27:28 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<sourcePk>4F007063-B32C-A8DF-CC6B-150027971BE3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7994AA11-FDAE-7C08-BB65-6D3BA1F511C5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C82C080B-6A3E-1815-C087-1F8D83517A71</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="F23F5345-41FF-94F9-E3E8-2CF3E59824BA">
+<createdBy>Claudia Llamocca</createdBy>
+<createdTime>2019-04-24 03:56:47 UTC</createdTime>
+<ownerDesignName>RCR MOTORS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="791AB8CB-3882-901A-5FE8-48F7A2CBDBCA" containerWithKeyObject="DDE850DE-E54E-1171-A6BF-A75E4CDC4E36" localFKIndex="F9246373-300B-F6B7-5BFA-715DD4F82AF5" name="Cliente_Efectivo_Cliente_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>E07008F5-6DF6-4624-BD34-88E4261DCE7C</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<referredTableLongName>Cliente</referredTableLongName>
+<arc>80632269-B077-4691-1721-DEF6D0829B0B</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>00ACE04A-EEB2-F4F2-C608-D79B930363F2</referredTableID>
+<keyObject>AC2E6AEA-F4A6-2078-195C-FAF543A7A87F</keyObject>
+<referredKeyID>AC2E6AEA-F4A6-2078-195C-FAF543A7A87F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CodCliente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
