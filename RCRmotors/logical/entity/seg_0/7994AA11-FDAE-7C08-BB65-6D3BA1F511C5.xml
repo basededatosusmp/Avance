@@ -28,22 +28,9 @@
 <dataTypeSize>10 BYTE</dataTypeSize>
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="NomCli1" id="96881DA3-97EC-57B3-6FAF-DF2FAFE062C7">
+<Attribute name="ApePate" id="3D4B7323-E8E4-1526-3FDA-9BE197D752C7">
 <createdBy>Claudia Llamocca</createdBy>
-<createdTime>2019-04-24 03:59:35 UTC</createdTime>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<engineerTo>
-<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="NomCli2" id="1E98141B-D5CA-F689-E794-C80597DA2850">
-<createdBy>Claudia Llamocca</createdBy>
-<createdTime>2019-04-24 04:00:30 UTC</createdTime>
+<createdTime>2019-04-24 04:01:28 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
 <engineerTo>
 <item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
@@ -67,13 +54,27 @@
 <dataTypeSize>20 BYTE</dataTypeSize>
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ApePate" id="3D4B7323-E8E4-1526-3FDA-9BE197D752C7">
+<Attribute name="NomCli1" id="96881DA3-97EC-57B3-6FAF-DF2FAFE062C7">
 <createdBy>Claudia Llamocca</createdBy>
-<createdTime>2019-04-24 04:01:28 UTC</createdTime>
+<createdTime>2019-04-24 03:59:35 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
 <engineerTo>
 <item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NomCli2" id="1E98141B-D5CA-F689-E794-C80597DA2850">
+<createdBy>Claudia Llamocca</createdBy>
+<createdTime>2019-04-24 04:00:30 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -106,18 +107,20 @@
 <dataTypeSize>25 BYTE</dataTypeSize>
 <ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="CodAuto cliente" id="806A80DB-DD10-542D-8FFB-1559EB459AF7">
+<Attribute name="CodCami" id="9852185E-80B6-9963-0A7B-1FB2AC5AA27D">
 <createdBy>Ricardo</createdBy>
-<createdTime>2019-05-03 20:11:48 UTC</createdTime>
+<createdTime>2019-05-23 03:24:06 UTC</createdTime>
+<generatorID>F10B508F-8397-1047-1DCC-9BB894FA6BA7</generatorID>
 <ownerDesignName>RCRmotors</ownerDesignName>
 <engineerTo>
 <item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
 </engineerTo>
+<referedAttribute>1A5CAE45-C179-9280-DE3D-63695ECD8A99</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="91C612D6-51A5-EAB1-1E4C-4A0424E6F4DD" containerWithKeyObject="2E632513-762E-F948-5199-F212E8DA5C52" localFKIndex="29313455-74BB-E6C8-CB30-63F5F4827461" name="TarjetaPropiedad_StockCamionetas_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9F007D09-ECE2-D350-E701-CE7EABD664C6" containerWithKeyObject="00ACE04A-EEB2-F4F2-C608-D79B930363F2" localFKIndex="B0000524-EF4D-F55F-DCD7-DF4A8D911AD0" name="Cliente_StockCamionetas_FK">
 <createdBy>Ricardo</createdBy>
-<createdTime>2019-05-18 02:33:26 UTC</createdTime>
-<generatorID>BDFFB0CD-BF5F-4850-3AE1-F02FDB5214C4</generatorID>
+<createdTime>2019-05-23 03:28:18 UTC</createdTime>
+<generatorID>F10B508F-8397-1047-1DCC-9BB894FA6BA7</generatorID>
 <ownerDesignName>RCRmotors</ownerDesignName>
 <referredTableLongName>StockCamionetas</referredTableLongName>
 <deleteRule>CASCADE</deleteRule>

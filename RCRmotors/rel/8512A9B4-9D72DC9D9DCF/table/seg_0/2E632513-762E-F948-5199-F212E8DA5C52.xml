@@ -8,19 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Numero_Serie" id="42D266AF-EDFE-8ED3-049A-1CBB0970FD05">
-<createdBy>Ricardo</createdBy>
-<createdTime>2019-05-18 02:33:26 UTC</createdTime>
-<generatorID>9E004536-02A0-95C9-DBE3-B486DF6E64AB</generatorID>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>16 BYTE</dataTypeSize>
-<ownDataTypeParameters>16 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Num_Motor" id="04645CCC-BD8D-134E-5690-3276D4221DDF">
+<Column name="VIN" id="04645CCC-BD8D-134E-5690-3276D4221DDF">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 02:33:26 UTC</createdTime>
 <generatorID>165692D0-E547-5DC8-57A3-A8F5FC83FE1F</generatorID>
@@ -28,11 +16,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>12 BYTE</dataTypeSize>
-<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>17 CHAR</dataTypeSize>
+<ownDataTypeParameters>17 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Placa_Rodaje" id="F096C5AF-0A2B-F6C1-5D63-3BF241573226">
+<Column name="PlacaRodaje" id="F096C5AF-0A2B-F6C1-5D63-3BF241573226">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 02:33:26 UTC</createdTime>
 <generatorID>532A655B-278B-668A-746D-FB64E35D8D05</generatorID>
@@ -44,20 +32,7 @@
 <ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Num_vin" id="7566B655-D010-3F19-01F0-B870F6A1A39C">
-<createdBy>Ricardo</createdBy>
-<createdTime>2019-05-18 02:33:26 UTC</createdTime>
-<generatorID>A9998B26-5DFC-004E-9CC5-C0F491AE4D73</generatorID>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 BYTE</dataTypeSize>
-<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Placa_Vigente" id="148EB7DC-CD70-F1B2-D070-B518AC63178F">
+<Column name="PlacaVigente" id="148EB7DC-CD70-F1B2-D070-B518AC63178F">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 02:33:26 UTC</createdTime>
 <generatorID>206A2515-B131-9CBB-DA5E-CDD8BC605FB3</generatorID>
@@ -69,7 +44,7 @@
 <ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Placa_Anterior" id="3CE8F762-1CAF-D4E4-2E61-0FA8EDCD749C">
+<Column name="PlacaAnterior" id="3CE8F762-1CAF-D4E4-2E61-0FA8EDCD749C">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 02:33:26 UTC</createdTime>
 <generatorID>9FF68E26-9B07-291B-FE45-F030289FA7EB</generatorID>
@@ -78,8 +53,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>6</dataTypeSize>
-<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Estado" id="CF20441C-434D-B183-6048-588E348B708C">
@@ -130,7 +105,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2 BYTE</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -149,11 +123,10 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="42D266AF-EDFE-8ED3-049A-1CBB0970FD05"/>
 <colUsage columnID="04645CCC-BD8D-134E-5690-3276D4221DDF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="29313455-74BB-E6C8-CB30-63F5F4827461" name="TarProp_StockCamionetas_FK">
+<ind_PK_UK id="29313455-74BB-E6C8-CB30-63F5F4827461" name="TarjetaPropiedad_StockCamionetas_FK">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 02:33:26 UTC</createdTime>
 <generatorID>BDFFB0CD-BF5F-4850-3AE1-F02FDB5214C4</generatorID>
@@ -164,7 +137,7 @@
 <colUsage columnID="E7FE59E5-EB7B-CCF4-69B2-5198A6DBF496"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7FF26AC7-44E6-3A86-877C-5A8EE27C2085" name="TarjeProp_Cliente_FK">
+<ind_PK_UK id="7FF26AC7-44E6-3A86-877C-5A8EE27C2085" name="TarjetaPropiedad_Cliente_FK">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 02:33:26 UTC</createdTime>
 <generatorID>96635131-32AA-33FB-E8B3-BA812347338E</generatorID>

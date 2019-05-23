@@ -25,8 +25,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2 BYTE</dataTypeSize>
-<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>21 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Marca" id="4932634B-A64F-04FB-ABC9-E713BB08F8BD">
 <createdBy>Claudia Llamocca</createdBy>
@@ -51,8 +51,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>15 BYTE</dataTypeSize>
-<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Año" id="608C66C4-66D1-2AFB-B935-F2ACA1A271E3">
 <createdBy>Claudia Llamocca</createdBy>
@@ -63,8 +63,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Stock" id="3DE5A2FF-3246-8B6E-BFA2-93E8D600CA1D">
 <createdBy>Claudia Llamocca</createdBy>
@@ -79,7 +80,7 @@
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cilindrada" id="B3DD2018-D864-9E31-634F-D043D53A6408">
+<Attribute name="Cilindrada" id="B3DD2018-D864-9E31-634F-D043D53A6408">
 <createdBy>Claudia Llamocca</createdBy>
 <createdTime>2019-04-24 04:19:29 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
@@ -88,10 +89,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Precio" id="F302C78A-EC61-5EF0-63C2-81F7C27E34F6">
 <createdBy>Claudia Llamocca</createdBy>
@@ -103,23 +103,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
+<dataTypePrecision>7</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,5,2</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Potencia" id="9AF2E5AB-98DB-1CBE-0A38-99E1E042AD3E">
-<createdBy>Claudia Llamocca</createdBy>
-<createdTime>2019-04-24 04:20:22 UTC</createdTime>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<engineerTo>
-<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="PesoBruto" id="2A0997A5-B62C-52D0-40B7-56D02823E879">
 <createdBy>Claudia Llamocca</createdBy>
@@ -187,8 +173,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2 BYTE</dataTypeSize>
-<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="CapacidadPers" id="AC154CFD-2E37-7641-B74D-ABB6750284E8">
 <createdBy>Claudia Llamocca</createdBy>
@@ -203,22 +189,7 @@
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Cliente CodCliente" id="CA0E99C8-68E5-B738-6BB5-C751853D9E37">
-<createdBy>Claudia Llamocca</createdBy>
-<createdTime>2019-04-24 04:29:06 UTC</createdTime>
-<generatorID>F10B508F-8397-1047-1DCC-9BB894FA6BA7</generatorID>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<engineerTo>
-<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
-</engineerTo>
-<referedAttribute>CD9EB734-E3D6-C32F-DA0F-EDBA3C232917</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2 BYTE</dataTypeSize>
-<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Color cami" id="0F4A5E09-2010-F665-084D-8666193DC76C">
+<Attribute name="Color_cami" id="0F4A5E09-2010-F665-084D-8666193DC76C">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-03 18:30:14 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
@@ -237,8 +208,9 @@
 <createdBy>Claudia Llamocca</createdBy>
 <createdTime>2019-04-24 04:13:24 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

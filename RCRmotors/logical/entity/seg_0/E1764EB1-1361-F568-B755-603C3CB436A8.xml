@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E1764EB1-1361-F568-B755-603C3CB436A8" name="Cliente FinanConce">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E1764EB1-1361-F568-B755-603C3CB436A8" name="Cliente_FinanConce">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-03 19:46:48 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
@@ -16,7 +16,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="DNI cliente finanConce" id="D9137726-640C-B1D4-93C4-5988CA67B186">
+<Attribute name="DNI_clie_finanConce" id="D9137726-640C-B1D4-93C4-5988CA67B186">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-03 20:13:07 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
@@ -26,8 +26,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>9</dataTypeSize>
-<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 </Entity>

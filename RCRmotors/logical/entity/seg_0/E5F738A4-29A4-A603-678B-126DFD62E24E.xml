@@ -54,21 +54,6 @@
 <dataTypeSize>15 BYTE</dataTypeSize>
 <ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="CodVen" id="A7A5C036-CC81-D880-E135-FEA3E86131EB">
-<createdBy>Ricardo</createdBy>
-<createdTime>2019-05-20 20:17:46 UTC</createdTime>
-<generatorID>6CADCBB1-523F-21C4-F3EC-D25BA8681FC0</generatorID>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<engineerTo>
-<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
-</engineerTo>
-<referedAttribute>3AE7A881-4E52-02B6-DD44-5DBFFCCAE49F</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>10 BYTE</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="EE571083-82D9-628C-EE4A-27DD11803814" name="Tienda PK">

@@ -15,33 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Numero Serie" id="9E004536-02A0-95C9-DBE3-B486DF6E64AB">
+<Attribute name="VIN" id="A9998B26-5DFC-004E-9CC5-C0F491AE4D73">
 <createdBy>PERSONAL</createdBy>
-<createdTime>2019-05-13 03:10:28 UTC</createdTime>
+<createdTime>2019-05-13 03:15:40 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
 <engineerTo>
 <item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>16 BYTE</dataTypeSize>
-<ownDataTypeParameters>16 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17 CHAR</dataTypeSize>
+<ownDataTypeParameters>17 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Num Motor" id="165692D0-E547-5DC8-57A3-A8F5FC83FE1F">
-<createdBy>PERSONAL</createdBy>
-<createdTime>2019-05-13 03:12:12 UTC</createdTime>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<engineerTo>
-<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>12 BYTE</dataTypeSize>
-<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Placa Rodaje" id="532A655B-278B-668A-746D-FB64E35D8D05">
+<Attribute name="PlacaRodaje" id="532A655B-278B-668A-746D-FB64E35D8D05">
 <createdBy>PERSONAL</createdBy>
 <createdTime>2019-05-13 03:10:28 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
@@ -54,20 +41,7 @@
 <dataTypeSize>6 BYTE</dataTypeSize>
 <ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Num vin" id="A9998B26-5DFC-004E-9CC5-C0F491AE4D73">
-<createdBy>PERSONAL</createdBy>
-<createdTime>2019-05-13 03:15:40 UTC</createdTime>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<engineerTo>
-<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Placa Vigente" id="206A2515-B131-9CBB-DA5E-CDD8BC605FB3">
+<Attribute name="PlacaVigente" id="206A2515-B131-9CBB-DA5E-CDD8BC605FB3">
 <createdBy>PERSONAL</createdBy>
 <createdTime>2019-05-13 03:14:46 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
@@ -80,7 +54,7 @@
 <dataTypeSize>6 BYTE</dataTypeSize>
 <ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Placa Anterior" id="9FF68E26-9B07-291B-FE45-F030289FA7EB">
+<Attribute name="PlacaAnterior" id="9FF68E26-9B07-291B-FE45-F030289FA7EB">
 <createdBy>PERSONAL</createdBy>
 <createdTime>2019-05-13 03:15:05 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
@@ -91,8 +65,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>6</dataTypeSize>
-<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Estado" id="82EFF245-F191-1D01-D04F-15947D23C727">
 <createdBy>PERSONAL</createdBy>
@@ -133,9 +107,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>10 BYTE</dataTypeSize>
-<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="StockCamionetas CodCami" id="128CF5F8-AAB9-DF30-6936-17EA1CF946C9">
+<Attribute name="StockCamionetas_CodCami" id="128CF5F8-AAB9-DF30-6936-17EA1CF946C9">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 01:34:47 UTC</createdTime>
 <generatorID>BDFFB0CD-BF5F-4850-3AE1-F02FDB5214C4</generatorID>
@@ -147,8 +121,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2 BYTE</dataTypeSize>
-<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -162,8 +136,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>9E004536-02A0-95C9-DBE3-B486DF6E64AB</attributeRef>
-<attributeRef>165692D0-E547-5DC8-57A3-A8F5FC83FE1F</attributeRef>
+<attributeRef>A9998B26-5DFC-004E-9CC5-C0F491AE4D73</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

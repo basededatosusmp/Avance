@@ -28,32 +28,6 @@
 <dataTypeSize>10 BYTE</dataTypeSize>
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="PrimerNom" id="81B965D7-1CAA-466F-CB74-D17692AA5396">
-<createdBy>Claudia Llamocca</createdBy>
-<createdTime>2019-04-24 04:09:45 UTC</createdTime>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<engineerTo>
-<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="SegNom" id="8F2CEC77-F0A6-2055-801C-047D92C36923">
-<createdBy>Claudia Llamocca</createdBy>
-<createdTime>2019-04-24 04:10:10 UTC</createdTime>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<engineerTo>
-<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="ApePa" id="ABF3526F-7980-6899-0B18-4729E013BBAD">
 <createdBy>Claudia Llamocca</createdBy>
 <createdTime>2019-04-24 04:10:23 UTC</createdTime>
@@ -80,6 +54,32 @@
 <dataTypeSize>20 BYTE</dataTypeSize>
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="PrimerNom" id="81B965D7-1CAA-466F-CB74-D17692AA5396">
+<createdBy>Claudia Llamocca</createdBy>
+<createdTime>2019-04-24 04:09:45 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SegNom" id="8F2CEC77-F0A6-2055-801C-047D92C36923">
+<createdBy>Claudia Llamocca</createdBy>
+<createdTime>2019-04-24 04:10:10 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="TelMovil" id="C7B8F52C-DE37-EE72-1C0F-3CAE871B3ACF">
 <createdBy>Claudia Llamocca</createdBy>
 <createdTime>2019-04-24 04:11:24 UTC</createdTime>
@@ -90,12 +90,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>15</dataTypeSize>
-<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="DireVende" id="3B934BBD-4AF0-A953-154B-8B6D1F8CFEAE">
-<createdBy>Claudia Llamocca</createdBy>
-<createdTime>2019-04-24 04:11:44 UTC</createdTime>
+<Attribute name="Email" id="62D3AB52-8F62-FBDB-74E4-188B451839A9">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-23 03:40:47 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
 <engineerTo>
 <item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
@@ -103,8 +103,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>25 BYTE</dataTypeSize>
-<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="FechaIngr" id="F0072967-6AC6-DB72-6A6F-39758C08C3E3">
 <createdBy>Claudia Llamocca</createdBy>
@@ -131,14 +131,31 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="CodTienda" id="66E54C27-C414-4744-8108-827F7EE022EC">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-23 03:26:49 UTC</createdTime>
+<generatorID>6CADCBB1-523F-21C4-F3EC-D25BA8681FC0</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6357D359-5C6D-A170-2876-78BE4CC42FB4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="1D25D9BA-0727-EC09-2A6C-12D3004FD740" name="Vendedor PK">
 <createdBy>Claudia Llamocca</createdBy>
 <createdTime>2019-04-24 04:05:13 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -16,8 +16,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2 BYTE</dataTypeSize>
-<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>21 CHAR</dataTypeSize>
+<ownDataTypeParameters>21 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Marca" id="D4F87DB5-0AE1-7F4C-23CE-C97EED892537">
@@ -51,8 +51,9 @@
 <ownerDesignName>RCRmotors</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Stock" id="2732A3A5-C927-35A5-A130-0ACB9063AE55">
@@ -67,17 +68,16 @@
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cilindrada" id="37B4F301-9401-8D3C-2B00-F88C047558FB">
+<Column name="Cilindrada" id="37B4F301-9401-8D3C-2B00-F88C047558FB">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 02:33:26 UTC</createdTime>
 <generatorID>B3DD2018-D864-9E31-634F-D043D53A6408</generatorID>
 <ownerDesignName>RCRmotors</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Precio" id="35A82D17-0003-7DF9-7209-B23FE081BAF2">
@@ -88,22 +88,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
+<dataTypePrecision>7</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,5,2</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Potencia" id="7D989F1B-7F4B-16E4-43F9-FAD518BA0C76">
-<createdBy>Ricardo</createdBy>
-<createdTime>2019-05-18 02:33:26 UTC</createdTime>
-<generatorID>9AF2E5AB-98DB-1CBE-0A38-99E1E042AD3E</generatorID>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="PesoBruto" id="AA555FB5-120E-1BB5-8103-6C1A1F6CC2E4">
@@ -166,8 +153,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2 BYTE</dataTypeSize>
-<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CapacidadPers" id="F73D6510-043D-5A2F-286A-4AF76B451FAD">
@@ -181,22 +168,6 @@
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Cliente_CodCliente" id="40A1446D-5B21-7E7B-7F6A-A499F90977C2">
-<createdBy>Ricardo</createdBy>
-<createdTime>2019-05-18 02:33:26 UTC</createdTime>
-<generatorID>CA0E99C8-68E5-B738-6BB5-C751853D9E37</generatorID>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2 BYTE</dataTypeSize>
-<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="019DAFB6-84FC-A17B-EEB8-6450BCEC6C8A" referredColumn="ECB529A8-B73C-DC92-F796-403C8565939D"/>
-</associations>
 </Column>
 <Column name="Color_cami" id="A6AF7159-A24F-114B-5E71-5D367A711E04">
 <createdBy>Ricardo</createdBy>
@@ -222,17 +193,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BA352381-7A27-3A19-25B9-5C41602E12D1"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="0E6AA33F-4737-95AB-06C3-1A3AE1A16FA7" name="StockCamionetas_Cliente_FK">
-<createdBy>Ricardo</createdBy>
-<createdTime>2019-05-18 02:33:26 UTC</createdTime>
-<generatorID>F10B508F-8397-1047-1DCC-9BB894FA6BA7</generatorID>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="40A1446D-5B21-7E7B-7F6A-A499F90977C2"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

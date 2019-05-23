@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Vendedor Tienda FK" directorySegmentName="seg_0" id="6CADCBB1-523F-21C4-F3EC-D25BA8681FC0">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Vendedor_Tienda_FK" directorySegmentName="seg_0" id="6CADCBB1-523F-21C4-F3EC-D25BA8681FC0">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 01:50:52 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
@@ -8,6 +8,7 @@
 </engineerTo>
 <sourcePk>1D25D9BA-0727-EC09-2A6C-12D3004FD740</sourcePk>
 <targetPk>EE571083-82D9-628C-EE4A-27DD11803814</targetPk>
+<dominantRole>E5F738A4-29A4-A603-678B-126DFD62E24E</dominantRole>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>

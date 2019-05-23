@@ -20,30 +20,6 @@
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PrimerNom" id="976184A3-F9A8-86D8-62A2-CF06FF6A6D6E">
-<createdBy>Ricardo</createdBy>
-<createdTime>2019-05-18 02:33:26 UTC</createdTime>
-<generatorID>81B965D7-1CAA-466F-CB74-D17692AA5396</generatorID>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="SegNom" id="F553A280-A245-0BC0-70EC-BA936DE2FA6B">
-<createdBy>Ricardo</createdBy>
-<createdTime>2019-05-18 02:33:26 UTC</createdTime>
-<generatorID>8F2CEC77-F0A6-2055-801C-047D92C36923</generatorID>
-<ownerDesignName>RCRmotors</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="ApePa" id="8560B7D9-F653-C0AB-7AB6-865259933BC0">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 02:33:26 UTC</createdTime>
@@ -68,6 +44,31 @@
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="PrimerNom" id="976184A3-F9A8-86D8-62A2-CF06FF6A6D6E">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>81B965D7-1CAA-466F-CB74-D17692AA5396</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SegNom" id="F553A280-A245-0BC0-70EC-BA936DE2FA6B">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 02:33:26 UTC</createdTime>
+<generatorID>8F2CEC77-F0A6-2055-801C-047D92C36923</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="TelMovil" id="21F2E55D-83F5-D69E-3D1D-B4059C9567AD">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 02:33:26 UTC</createdTime>
@@ -76,20 +77,19 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>15</dataTypeSize>
-<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DireVende" id="977B482F-541E-E5BB-5AF0-4692F8A680ED">
+<Column name="Email" id="33F834E7-905A-D9EB-64D4-CF20A6B5AB81">
 <createdBy>Ricardo</createdBy>
-<createdTime>2019-05-18 02:33:26 UTC</createdTime>
-<generatorID>3B934BBD-4AF0-A953-154B-8B6D1F8CFEAE</generatorID>
+<createdTime>2019-05-23 03:41:17 UTC</createdTime>
 <ownerDesignName>RCRmotors</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>25 BYTE</dataTypeSize>
-<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="FechaIngr" id="5A880B03-E00C-9E2B-C9FD-40028292FD74">
@@ -113,7 +113,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>3 BYTE</dataTypeSize>
-<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -132,6 +132,19 @@
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CodTienda" id="21AD69CA-6FA5-E4F2-B8F2-0741B7395526">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-23 03:28:18 UTC</createdTime>
+<generatorID>66E54C27-C414-4744-8108-827F7EE022EC</generatorID>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="E7C81460-C196-2BA9-98E6-23535F11F539" name="Vendedor_PK">
@@ -144,6 +157,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D7726BE8-52C2-D1D1-789E-5D81614B8214"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E6E60FA-9070-58B3-6D9E-0AE605F016D6" name="Vendedor__IDX">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-23 03:28:18 UTC</createdTime>
+<ownerDesignName>RCRmotors</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>6CADCBB1-523F-21C4-F3EC-D25BA8681FC0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="810FFE77-D58B-98D8-035B-695DF61DEEA3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="F40B60C0-5488-8D2F-AD3C-8C683FEC5C67" name="Vendedor_Tienda_FK">

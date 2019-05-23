@@ -24,7 +24,7 @@
 <colAssociation fkAssociation="14C70186-D123-BBB6-7548-15DA21748F8F" referredColumn="ECB529A8-B73C-DC92-F796-403C8565939D"/>
 </associations>
 </Column>
-<Column name="DNI_cli_finanConce" id="429FC4D7-DD76-F598-CDD3-98CCFCE9CB80">
+<Column name="DNI_clie_finanConce" id="429FC4D7-DD76-F598-CDD3-98CCFCE9CB80">
 <createdBy>Ricardo</createdBy>
 <createdTime>2019-05-18 02:33:26 UTC</createdTime>
 <generatorID>D9137726-640C-B1D4-93C4-5988CA67B186</generatorID>
@@ -32,8 +32,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>9</dataTypeSize>
-<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
