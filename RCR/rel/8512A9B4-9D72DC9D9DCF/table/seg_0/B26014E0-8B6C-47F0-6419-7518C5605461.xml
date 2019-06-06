@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B26014E0-8B6C-47F0-6419-7518C5605461" name="PreEntrega">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>3FFA7F16-BD62-21F4-1029-4E285C0C106A</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodCliente" id="0AC16544-DA01-2C8F-1783-B54823FF7772">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>9D255312-17C7-9F0F-12C9-C02D635649E8</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comprobante_Codcomprobante" id="976AB171-2A18-532C-34E7-A3E6962C1FF3">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>74A16E6E-B7B8-81B4-48E2-7C6E80BDE340</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE3EFFFD-00B6-C511-7439-28CACA4E3FC3" referredColumn="BFAE58CA-5CA5-AFED-6CCD-A8B2A987AF39"/>
+</associations>
+</Column>
+<Column name="Estado" id="1FA7A26F-9469-6838-9EEA-9D3706D6AB8A">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<comment>Aprobado/Desaprobado</comment>
+<generatorID>E4E22CE6-48DB-F71F-B51A-2F3E5721F175</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comentarios" id="0F1CFDDA-58D8-5DA2-35B6-74C515FB1689">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>E27AA67C-6B39-C3C8-7779-D1F7E18215E4</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3AC9C9A9-159A-FC22-0CA8-3541B052FA9E" name="PreEntrega_PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>98D06E68-3EA9-6EF2-12D4-456A0F11C5E8</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AC16544-DA01-2C8F-1783-B54823FF7772"/>
+<colUsage columnID="976AB171-2A18-532C-34E7-A3E6962C1FF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42D42401-36CC-548A-B6E3-6BF7226FF39E" name="PreEntrega_Compro_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>17D4D836-C8D5-8BD8-85B6-BD9022DAFF95</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="976AB171-2A18-532C-34E7-A3E6962C1FF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

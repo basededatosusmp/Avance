@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C0D6F706-E412-D1FF-A775-BD338BD435D9" name="Detalle_Comprobante">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:22:08 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Monto" id="E6C293AE-1BE9-BC8E-66A6-C6B1AFA3DDE5">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:22:19 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<ownDataTypeParameters>7 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Codcomprobante" id="25E01116-1878-806B-330A-388B51AF9AFB">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:22:47 UTC</createdTime>
+<comment>tipoCompro || numero ascendente</comment>
+<generatorID>820EDC9B-AC9E-B357-5DA6-DC3533016478</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<referedAttribute>65776B9A-4365-1B3B-D536-3F37E06C1C56</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5FAB13BA-E6D7-EF0E-7426-79DC0D85AC33" name="Detalle_Comprobante PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:23:02 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>25E01116-1878-806B-330A-388B51AF9AFB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AE3EFFFD-00B6-C511-7439-28CACA4E3FC3" containerWithKeyObject="B26014E0-8B6C-47F0-6419-7518C5605461" localFKIndex="42D42401-36CC-548A-B6E3-6BF7226FF39E" name="PreEntrega_Compro_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>17D4D836-C8D5-8BD8-85B6-BD9022DAFF95</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<referredTableLongName>Comprobante</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>58FB335B-F23C-68CA-75C6-2DDBCD24F096</referredTableID>
+<keyObject>C7E3CBCA-F40D-E151-4068-81E21749704C</keyObject>
+<referredKeyID>C7E3CBCA-F40D-E151-4068-81E21749704C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Codcomprobante</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

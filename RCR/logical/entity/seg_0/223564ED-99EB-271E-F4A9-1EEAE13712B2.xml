@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="223564ED-99EB-271E-F4A9-1EEAE13712B2" name="Cliente_Efectivo">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-03 19:46:22 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>7994AA11-FDAE-7C08-BB65-6D3BA1F511C5</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TipoMon_Cli_Efec" id="61E206EE-819E-D741-63CB-9935572B342C">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-03 19:55:23 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TipoPag_Cli_efec" id="1D26FE81-0BC1-CD9E-8B47-03F000EACFDD">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-03 19:55:24 UTC</createdTime>
+<comment>Cuotas o directo</comment>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

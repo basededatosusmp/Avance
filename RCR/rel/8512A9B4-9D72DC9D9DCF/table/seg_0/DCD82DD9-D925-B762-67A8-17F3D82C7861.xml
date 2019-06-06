@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DCD82DD9-D925-B762-67A8-17F3D82C7861" name="DatosTarjPropiedad">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>C82C080B-6A3E-1815-C087-1F8D83517A71</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VIN" id="43191C3E-0A96-7A4B-0A42-911AFF8B490D">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>A9998B26-5DFC-004E-9CC5-C0F491AE4D73</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17 CHAR</dataTypeSize>
+<ownDataTypeParameters>17 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NMotor" id="B45FDE8B-2D0F-452A-30C3-17B5433D402D">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>AFF17124-5A2F-AF91-07DF-FD8F216A69DF</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PlacaVigente" id="7ADF4276-E6FD-DC85-7FA2-B9B0444327B4">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>206A2515-B131-9CBB-DA5E-CDD8BC605FB3</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Anotaciones" id="7E0886E4-08DB-182E-1055-86B3D2B28E6D">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>B0E23C29-145D-2BB2-437F-22233653311D</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_CodCliente" id="9475B322-363A-C015-83E0-348841B054A3">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>252FB880-B2EE-DA11-C287-F4D13B732110</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60675D2A-D94E-B96E-72A3-5F8CC6FBA559" referredColumn="A01ECABA-F931-01F2-9E19-12D084CD84C3"/>
+</associations>
+</Column>
+<Column name="Camionetas_CodCami" id="E4A39655-C97B-A3EE-2CEC-866C1474BB22">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>128CF5F8-AAB9-DF30-6936-17EA1CF946C9</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>21 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A05D239E-48D5-3826-6CFF-813072D054F8" referredColumn="687FBFEB-D24E-1EC4-5460-D7AB4ED49CE9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="924B5934-05A1-D286-3D1C-401235642F00" name="DatosTarjPropiedad_PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>E9E61AA4-E64F-CCC6-D90B-9ED1BEEC6646</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43191C3E-0A96-7A4B-0A42-911AFF8B490D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAFF5B1B-0E17-0F1B-1016-53ADB5FE8022" name="DatosTarjPropiedad_Cliente_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>96635131-32AA-33FB-E8B3-BA812347338E</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9475B322-363A-C015-83E0-348841B054A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC30A2BC-0427-417E-8D82-CB955104746C" name="DatosTarjPropiedad_Camionetas_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>BDFFB0CD-BF5F-4850-3AE1-F02FDB5214C4</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4A39655-C97B-A3EE-2CEC-866C1474BB22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

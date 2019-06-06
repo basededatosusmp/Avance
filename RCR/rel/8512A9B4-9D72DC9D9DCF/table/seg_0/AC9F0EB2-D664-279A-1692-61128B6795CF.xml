@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC9F0EB2-D664-279A-1692-61128B6795CF" name="Cliente_TarCred">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>0F14B3E6-DEBD-2A4E-FC32-82B1C87AF413</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodCliente" id="7AB3D589-98F7-0AD5-76C6-FDC7631412A5">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>CD9EB734-E3D6-C32F-DA0F-EDBA3C232917</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D46C286-39BF-9BFF-2DF5-9A0B00BB885C" referredColumn="A01ECABA-F931-01F2-9E19-12D084CD84C3"/>
+</associations>
+</Column>
+<Column name="tipoMone_cli_TarCred" id="4C4F06D5-5AFC-652D-9397-F73D73878691">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>800A86B3-183A-9FED-1ED4-A40090C1D6A7</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipoPag_cli_tarCred" id="9B7969DA-1633-957E-855F-83B3DB536AB6">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<comment>En cuotas o Directo</comment>
+<generatorID>60984E01-9FD8-290B-7ED5-2A9D9A40A00C</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED5FD3BD-9611-1447-CD57-589B9450E1FA" name="Cliente_TarCred_PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>4F007063-B32C-A8DF-CC6B-150027971BE3</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AB3D589-98F7-0AD5-76C6-FDC7631412A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68FC9FAB-AC04-6C9C-955D-0206A84B6396" name="Cliente_TarCred_Cliente_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>E06E8A9C-D37A-8D1C-9582-6C0BD716F4C2</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AB3D589-98F7-0AD5-76C6-FDC7631412A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

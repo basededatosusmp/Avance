@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A05D239E-48D5-3826-6CFF-813072D054F8" containerWithKeyObject="DCD82DD9-D925-B762-67A8-17F3D82C7861" localFKIndex="AC30A2BC-0427-417E-8D82-CB955104746C" name="DatosTarjPropiedad_Camionetas_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>BDFFB0CD-BF5F-4850-3AE1-F02FDB5214C4</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<referredTableLongName>Camionetas</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>3E646EA9-FCBA-CA70-D3CF-A7BC6D2210BC</referredTableID>
+<keyObject>ADAF9E11-3350-4778-68BE-2784F55FF4DC</keyObject>
+<referredKeyID>ADAF9E11-3350-4778-68BE-2784F55FF4DC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CodCami</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Vendedor_Tienda" directorySegmentName="seg_0" id="9D63F72D-38ED-B05D-7B13-D2BFC06C85CB">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-24 05:15:44 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<sourcePk>EE571083-82D9-628C-EE4A-27DD11803814</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E5F738A4-29A4-A603-678B-126DFD62E24E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>83D0D32C-75CC-7A09-DB64-02E1EA20CBAE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

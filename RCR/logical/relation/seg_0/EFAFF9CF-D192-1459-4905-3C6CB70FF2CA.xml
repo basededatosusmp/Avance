@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Comprobante_Cliente_FK" directorySegmentName="seg_0" id="EFAFF9CF-D192-1459-4905-3C6CB70FF2CA">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:26:12 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<sourcePk>4F007063-B32C-A8DF-CC6B-150027971BE3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7994AA11-FDAE-7C08-BB65-6D3BA1F511C5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B8C596D-0FED-4EAA-C0A9-A47706574D1A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

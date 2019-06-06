@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A85FDF94-C08D-1A11-AB5A-63CF05F445E2" name="Cliente_FinanConce">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>E1764EB1-1361-F568-B755-603C3CB436A8</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodCliente" id="873100DB-B274-F6EE-6E66-E0912B53BCB1">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>CD9EB734-E3D6-C32F-DA0F-EDBA3C232917</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5ECB4AC-1540-4F77-374B-EF672A6CB7F1" referredColumn="A01ECABA-F931-01F2-9E19-12D084CD84C3"/>
+</associations>
+</Column>
+<Column name="DNI_clie_finanConce" id="3DBC04D1-2BFA-935C-E517-DAAF48FD2A11">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>D9137726-640C-B1D4-93C4-5988CA67B186</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="440B8F9B-0077-9BEC-12D0-ED1C480F9F98" name="Cliente_FinanConce_PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>4F007063-B32C-A8DF-CC6B-150027971BE3</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="873100DB-B274-F6EE-6E66-E0912B53BCB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="100E1413-6E0F-44B6-2CA5-63BDBCC0383F" name="Cliente_FinanConce_Cliente_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>9A78EB53-FE32-AD15-4EBA-4D969194A59E</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="873100DB-B274-F6EE-6E66-E0912B53BCB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

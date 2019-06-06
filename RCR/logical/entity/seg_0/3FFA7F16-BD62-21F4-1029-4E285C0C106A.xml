@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3FFA7F16-BD62-21F4-1029-4E285C0C106A" name="PreEntrega">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 02:54:29 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CodCliente" id="9D255312-17C7-9F0F-12C9-C02D635649E8">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 02:54:39 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Codcomprobante" id="74A16E6E-B7B8-81B4-48E2-7C6E80BDE340">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:52:11 UTC</createdTime>
+<generatorID>17D4D836-C8D5-8BD8-85B6-BD9022DAFF95</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<referedAttribute>65776B9A-4365-1B3B-D536-3F37E06C1C56</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="E4E22CE6-48DB-F71F-B51A-2F3E5721F175">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 02:55:10 UTC</createdTime>
+<comment>Aprobado/Desaprobado</comment>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comentarios" id="E27AA67C-6B39-C3C8-7779-D1F7E18215E4">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 02:55:29 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="98D06E68-3EA9-6EF2-12D4-456A0F11C5E8" name="Pre-Entrega_PK">
+<createdBy>PERSONAL</createdBy>
+<createdTime>2019-05-13 02:54:53 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9D255312-17C7-9F0F-12C9-C02D635649E8</attributeRef>
+<attributeRef>74A16E6E-B7B8-81B4-48E2-7C6E80BDE340</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

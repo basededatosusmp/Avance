@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1B8C596D-0FED-4EAA-C0A9-A47706574D1A" name="Comprobante">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:25:02 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Codcomprobante" id="65776B9A-4365-1B3B-D536-3F37E06C1C56">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:25:09 UTC</createdTime>
+<comment>tipoCompro || numero ascendente</comment>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cliente CodCliente" id="72E57268-E166-1E41-6EE5-95DCE85437E5">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:26:12 UTC</createdTime>
+<generatorID>EFAFF9CF-D192-1459-4905-3C6CB70FF2CA</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<referedAttribute>CD9EB734-E3D6-C32F-DA0F-EDBA3C232917</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StockCamionetas CodCami" id="15EA9610-3ABC-341F-A20F-482B7055A04A">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:30:29 UTC</createdTime>
+<generatorID>AEAFDEE1-C97A-E20B-E1F1-21694ECF5B55</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<referedAttribute>1A5CAE45-C179-9280-DE3D-63695ECD8A99</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Vendedor CodVen" id="D31ADC4D-AFAB-88AA-4FAE-772ACFD1B9C3">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:30:39 UTC</createdTime>
+<generatorID>0AF5D717-1D20-BEBE-4FBB-E0349098ACDB</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<referedAttribute>3AE7A881-4E52-02B6-DD44-5DBFFCCAE49F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tienda CodTienda" id="21EEE368-7A5A-D714-A312-2CF3A9BDDD88">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 01:52:30 UTC</createdTime>
+<generatorID>1ED29366-19CD-47FA-2927-E4E64F5AED0C</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<referedAttribute>6357D359-5C6D-A170-2876-78BE4CC42FB4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="95580A9C-EF80-EDB1-73E6-FCEEA21467B6">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-23 21:38:27 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CodTipoCompro" id="DC720EBF-8FBA-0235-FE45-1DE091024A7C">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:24:56 UTC</createdTime>
+<generatorID>E7157663-162E-F16D-C038-0FF86678856A</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<referedAttribute>BA1615D6-DE5B-C3F5-1365-9445D3529BB1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BAA1B5D0-4ABD-CD04-09F9-9BA8CE255C91" name="Comprobante PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:25:21 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>65776B9A-4365-1B3B-D536-3F37E06C1C56</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

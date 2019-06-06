@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="26EB62CC-EF3B-6D6A-D58B-D21467CF01B6" containerWithKeyObject="58FB335B-F23C-68CA-75C6-2DDBCD24F096" localFKIndex="1052C549-37D6-3079-117C-71D142AC3034" name="Compro_Tipo_Compro_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>E7157663-162E-F16D-C038-0FF86678856A</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<referredTableLongName>Tipo_Comprobante</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>860BB727-CF30-B07A-CFFB-E08C4EF0134C</referredTableID>
+<keyObject>926BE414-CD07-50B4-1A3C-B92C11731D9D</keyObject>
+<referredKeyID>926BE414-CD07-50B4-1A3C-B92C11731D9D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CodTipoCompro</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

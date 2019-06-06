@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<InheritanceRelation class="oracle.dbtools.crest.model.design.logical.InheritanceRelation" name="Hierarchy_2" directorySegmentName="seg_0" id="9A78EB53-FE32-AD15-4EBA-4D969194A59E">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-03 20:15:53 UTC</createdTime>
+<ownerDesignName>RCR MOTORS</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>Super Type</nameOnSource>
+<nameOnTarget>Sub Type</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceEntity>7994AA11-FDAE-7C08-BB65-6D3BA1F511C5</sourceEntity>
+<targetEntity>E1764EB1-1361-F568-B755-603C3CB436A8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</InheritanceRelation>

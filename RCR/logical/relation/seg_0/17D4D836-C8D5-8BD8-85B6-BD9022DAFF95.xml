@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PreEntrega_Comprobante_FK" directorySegmentName="seg_0" id="17D4D836-C8D5-8BD8-85B6-BD9022DAFF95">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:52:11 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<sourcePk>BAA1B5D0-4ABD-CD04-09F9-9BA8CE255C91</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1B8C596D-0FED-4EAA-C0A9-A47706574D1A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3FFA7F16-BD62-21F4-1029-4E285C0C106A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

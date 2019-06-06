@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Comprobante_Camionetas FK" directorySegmentName="seg_0" id="AEAFDEE1-C97A-E20B-E1F1-21694ECF5B55">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-17 13:30:29 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<sourcePk>D1592A4E-FB6C-0B66-20D7-2A9409CF84AE</sourcePk>
+<dominantRole>2FF6CD7C-98E0-0702-46D5-837BB1CB94D5</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2FF6CD7C-98E0-0702-46D5-837BB1CB94D5</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>1B8C596D-0FED-4EAA-C0A9-A47706574D1A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E773EAB-044B-56A6-A5FE-C4607ED65180" name="Detalle_Comprobante">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>C0D6F706-E412-D1FF-A775-BD338BD435D9</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Monto" id="54037CBE-31B5-53D3-22E9-2B08F24EB57A">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>E6C293AE-1BE9-BC8E-66A6-C6B1AFA3DDE5</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<ownDataTypeParameters>7 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comprobante_Codcomprobante" id="E1F7E16F-20B8-4ECE-1C92-9BB093702787">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<comment>tipoCompro || numero ascendente</comment>
+<generatorID>25E01116-1878-806B-330A-388B51AF9AFB</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F71D1390-E702-E6D1-9F57-5C326189EA7B" referredColumn="BFAE58CA-5CA5-AFED-6CCD-A8B2A987AF39"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="023CFE4C-C9B5-0B88-2043-E0950CD0D412" name="Detalle_Comprobante_PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>5FAB13BA-E6D7-EF0E-7426-79DC0D85AC33</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1F7E16F-20B8-4ECE-1C92-9BB093702787"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74C23AFA-ECB7-F6CB-B773-2B6AA62953D5" name="Detalle_Compro_Compro_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>820EDC9B-AC9E-B357-5DA6-DC3533016478</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1F7E16F-20B8-4ECE-1C92-9BB093702787"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

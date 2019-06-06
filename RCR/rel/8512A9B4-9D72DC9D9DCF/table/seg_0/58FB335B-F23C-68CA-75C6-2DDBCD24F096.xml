@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58FB335B-F23C-68CA-75C6-2DDBCD24F096" name="Comprobante">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>1B8C596D-0FED-4EAA-C0A9-A47706574D1A</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Codcomprobante" id="BFAE58CA-5CA5-AFED-6CCD-A8B2A987AF39">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<comment>tipoCompro || numero ascendente</comment>
+<generatorID>65776B9A-4365-1B3B-D536-3F37E06C1C56</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_CodCliente" id="7F333CC7-56ED-ADC1-0298-03F5B9E67665">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>72E57268-E166-1E41-6EE5-95DCE85437E5</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C5C4371F-FE5F-2A79-CF21-5858E8CD98B3" referredColumn="A01ECABA-F931-01F2-9E19-12D084CD84C3"/>
+</associations>
+</Column>
+<Column name="Camionetas_CodCami" id="824A6E44-88F4-8103-847B-D00C6DEE188F">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>15EA9610-3ABC-341F-A20F-482B7055A04A</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>21 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0424C561-5198-099F-404C-250D280DFEB2" referredColumn="687FBFEB-D24E-1EC4-5460-D7AB4ED49CE9"/>
+</associations>
+</Column>
+<Column name="Vendedor_CodVen" id="7EA01377-2A1A-CD5F-84E9-E53AB45F97DF">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>D31ADC4D-AFAB-88AA-4FAE-772ACFD1B9C3</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48308C81-23C1-9617-22B9-5A871B6EB57C" referredColumn="C2563F9C-E760-D559-D65D-4D9995D271A4"/>
+</associations>
+</Column>
+<Column name="Tienda_CodTienda" id="F4BA094B-66E9-5C11-75AC-BF594C55F149">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>21EEE368-7A5A-D714-A312-2CF3A9BDDD88</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9395EED4-EA3C-8198-5C66-EC61EF4F601D" referredColumn="0C48ECD8-2175-6BD9-67CD-187B12981E69"/>
+</associations>
+</Column>
+<Column name="Fecha" id="CCF9AA60-7254-CA88-5D2E-759055B7D2FE">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>95580A9C-EF80-EDB1-73E6-FCEEA21467B6</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_Comprobante_CodTipoCompro" id="1AE29ED7-500A-2378-B03B-92BFD77F50BF">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>DC720EBF-8FBA-0235-FE45-1DE091024A7C</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="26EB62CC-EF3B-6D6A-D58B-D21467CF01B6" referredColumn="E0C00858-9BFD-9369-D602-9D1D7E04DC43"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7E3CBCA-F40D-E151-4068-81E21749704C" name="Comprobante_PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>BAA1B5D0-4ABD-CD04-09F9-9BA8CE255C91</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFAE58CA-5CA5-AFED-6CCD-A8B2A987AF39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="478754A3-344F-BB41-BB7B-CB45C442602C" name="Comprobante__IDX">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>AEAFDEE1-C97A-E20B-E1F1-21694ECF5B55</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="824A6E44-88F4-8103-847B-D00C6DEE188F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22741ED0-884B-35C3-6E50-8544ACFBF50F" name="Comprobante_Camionetas_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>AEAFDEE1-C97A-E20B-E1F1-21694ECF5B55</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="824A6E44-88F4-8103-847B-D00C6DEE188F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FA2A29C-4975-2FB2-0724-D92CEC6889D8" name="Comprobante_Cliente_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>EFAFF9CF-D192-1459-4905-3C6CB70FF2CA</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F333CC7-56ED-ADC1-0298-03F5B9E67665"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="768D3273-505E-3E6A-028A-DEB1AC69E6E9" name="Comprobante_Tienda_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>1ED29366-19CD-47FA-2927-E4E64F5AED0C</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4BA094B-66E9-5C11-75AC-BF594C55F149"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E68AB821-DF4A-9D26-8F41-8764AC106862" name="Comprobante_Vendedor_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>0AF5D717-1D20-BEBE-4FBB-E0349098ACDB</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EA01377-2A1A-CD5F-84E9-E53AB45F97DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1052C549-37D6-3079-117C-71D142AC3034" name="Compro_Tipo_Compro_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>E7157663-162E-F16D-C038-0FF86678856A</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AE29ED7-500A-2378-B03B-92BFD77F50BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

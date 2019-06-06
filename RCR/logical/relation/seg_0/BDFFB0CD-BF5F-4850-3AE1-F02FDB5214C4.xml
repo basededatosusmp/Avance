@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TarProp_StockCamio_FK" directorySegmentName="seg_0" id="BDFFB0CD-BF5F-4850-3AE1-F02FDB5214C4">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 01:34:47 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<sourcePk>D1592A4E-FB6C-0B66-20D7-2A9409CF84AE</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2FF6CD7C-98E0-0702-46D5-837BB1CB94D5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C82C080B-6A3E-1815-C087-1F8D83517A71</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

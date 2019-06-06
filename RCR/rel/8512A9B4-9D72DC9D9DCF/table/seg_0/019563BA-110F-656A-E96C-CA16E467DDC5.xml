@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="019563BA-110F-656A-E96C-CA16E467DDC5" name="Venta">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Vendedor_CodVen" id="E2F0111A-3635-704A-713E-AA9483EA01D6">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B6DBC5F-E1F8-6874-55ED-0B0F5DDC7407" referredColumn="C2563F9C-E760-D559-D65D-4D9995D271A4"/>
+</associations>
+</Column>
+<Column name="Camionetas_CodCami" id="250ACA60-9D78-AD34-490E-4F7C3E611871">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>21 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46E61B35-EB12-3760-5246-02666CA6E5CC" referredColumn="687FBFEB-D24E-1EC4-5460-D7AB4ED49CE9"/>
+</associations>
+</Column>
+<Column name="DiaVenta" id="4A33E3E3-E994-5674-6518-B2A3C302E876">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>97B27198-5C9C-5DC0-45AD-2FA9240E8C22</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="282B4E0C-C005-077E-AC45-344662AE1B31" name="Venta_PK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2F0111A-3635-704A-713E-AA9483EA01D6"/>
+<colUsage columnID="250ACA60-9D78-AD34-490E-4F7C3E611871"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BDFF491-3BD0-87D2-AAAE-0FD6AF4A9B10" name="Venta_Vendedor_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>76757306-8EBC-2EC5-E471-9907A70D14DC</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2F0111A-3635-704A-713E-AA9483EA01D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E09464B-DADF-AE03-7ACF-D807D8943A71" name="Venta_Camionetas_FK">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-27 21:28:00 UTC</createdTime>
+<generatorID>76757306-8EBC-2EC5-E471-9907A70D14DC</generatorID>
+<ownerDesignName>RCR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="250ACA60-9D78-AD34-490E-4F7C3E611871"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

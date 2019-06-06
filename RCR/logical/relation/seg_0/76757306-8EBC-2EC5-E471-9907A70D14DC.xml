@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Venta" directorySegmentName="seg_0" id="76757306-8EBC-2EC5-E471-9907A70D14DC">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 01:46:57 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<sourcePk>1D25D9BA-0727-EC09-2A6C-12D3004FD740</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>83D0D32C-75CC-7A09-DB64-02E1EA20CBAE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2FF6CD7C-98E0-0702-46D5-837BB1CB94D5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="DiaVenta" id="97B27198-5C9C-5DC0-45AD-2FA9240E8C22">
+<createdBy>Ricardo</createdBy>
+<createdTime>2019-05-18 01:56:44 UTC</createdTime>
+<ownerDesignName>RCR</ownerDesignName>
+<engineerTo>
+<item key="8512A9B4-58B3-BD07-CDAE-9D72DC9D9DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

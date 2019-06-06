@@ -1,0 +1,306 @@
+CREATE TABLE camionetas (
+    codcami         CHAR(21 BYTE) NOT NULL,
+    marca           VARCHAR2(15 BYTE) NOT NULL,
+    modelo          VARCHAR2(20 BYTE) NOT NULL,
+    año             VARCHAR2(4 CHAR) NOT NULL,
+    stock           CHAR(2 BYTE) NOT NULL,
+    cilindrada      NUMBER(5, 2) NOT NULL,
+    precio          NUMBER(7, 4) NOT NULL,
+    pesobruto       NUMBER(7, 4) NOT NULL,
+    altura          NUMBER(7, 4) NOT NULL,
+    ancho           NUMBER(7, 4) NOT NULL,
+    largo           NUMBER(7, 4) NOT NULL,
+    estado          CHAR(1 BYTE) NOT NULL,
+    capacidadpers   NUMBER(2) NOT NULL,
+    color_cami      VARCHAR2(40 BYTE) NOT NULL
+);
+
+ALTER TABLE camionetas ADD CONSTRAINT camionetas_pk PRIMARY KEY ( codcami );
+
+CREATE TABLE cliente (
+    codcliente           CHAR(10 BYTE) NOT NULL,
+    apepat_cli           VARCHAR2(20 BYTE) NOT NULL,
+    apemat_cli           VARCHAR2(20 BYTE) NOT NULL,
+    nom1cli              VARCHAR2(20 BYTE) NOT NULL,
+    nom2cli              VARCHAR2(20 BYTE),
+    telfmovil_cli        VARCHAR2(15) NOT NULL,
+    email_cli            VARCHAR2(25 BYTE) NOT NULL,
+    camionetas_codcami   CHAR(21 BYTE) NOT NULL
+);
+
+ALTER TABLE cliente ADD CONSTRAINT cliente_pk PRIMARY KEY ( codcliente );
+
+CREATE TABLE cliente_efectivo (
+    codcliente         CHAR(10 BYTE) NOT NULL,
+    tipomon_cli_efec   VARCHAR2(30 BYTE) NOT NULL,
+    tipopag_cli_efec   CHAR(2 BYTE) NOT NULL
+);
+
+ALTER TABLE cliente_efectivo ADD CONSTRAINT cliente_efectivo_pk PRIMARY KEY ( codcliente );
+
+CREATE TABLE cliente_financonce (
+    codcliente            CHAR(10 BYTE) NOT NULL,
+    dni_clie_financonce   CHAR(9 BYTE) NOT NULL
+);
+
+ALTER TABLE cliente_financonce ADD CONSTRAINT cliente_financonce_pk PRIMARY KEY ( codcliente );
+
+CREATE TABLE cliente_multiopcion (
+    codcliente                     CHAR(10 BYTE) NOT NULL,
+    tpagomensual_cli_multiopcion   VARCHAR2(10 BYTE) NOT NULL,
+    tipomoneda                     VARCHAR2(50 BYTE) NOT NULL
+);
+
+ALTER TABLE cliente_multiopcion ADD CONSTRAINT cliente_multiopcion_pk PRIMARY KEY ( codcliente );
+
+CREATE TABLE cliente_tarcred (
+    codcliente             CHAR(10 BYTE) NOT NULL,
+    tipomone_cli_tarcred   VARCHAR2(15 BYTE) NOT NULL,
+    tipopag_cli_tarcred    VARCHAR2(20 BYTE) NOT NULL
+);
+
+ALTER TABLE cliente_tarcred ADD CONSTRAINT cliente_tarcred_pk PRIMARY KEY ( codcliente );
+
+CREATE TABLE comprobante (
+    codcomprobante                   CHAR(10 BYTE) NOT NULL,
+    cliente_codcliente               CHAR(10 BYTE) NOT NULL,
+    camionetas_codcami               CHAR(21 BYTE) NOT NULL,
+    vendedor_codven                  CHAR(10 BYTE) NOT NULL,
+    tienda_codtienda                 CHAR(3 BYTE) NOT NULL,
+    fecha                            DATE NOT NULL,
+    tipo_compro_codtipocompro   CHAR(2 BYTE) NOT NULL
+);
+
+CREATE UNIQUE INDEX comprobante__idx ON
+    comprobante (
+        camionetas_codcami
+    ASC );
+
+ALTER TABLE comprobante ADD CONSTRAINT comprobante_pk PRIMARY KEY ( codcomprobante );
+
+CREATE TABLE datostarjpropiedad (
+    vin                  CHAR(17 CHAR) NOT NULL,
+    nmotor               VARCHAR2(12 CHAR) NOT NULL,
+    placavigente         VARCHAR2(6 CHAR) NOT NULL,
+    anotaciones          VARCHAR2(40 BYTE),
+    cliente_codcliente   CHAR(10 BYTE) NOT NULL,
+    camionetas_codcami   CHAR(21 BYTE) NOT NULL
+);
+
+ALTER TABLE datostarjpropiedad ADD CONSTRAINT datostarjpropiedad_pk PRIMARY KEY ( vin );
+
+CREATE TABLE detalle_comprobante (
+    monto                        VARCHAR2(7 CHAR) NOT NULL,
+    comprobante_codcomprobante   CHAR(10 BYTE) NOT NULL
+);
+
+ALTER TABLE detalle_comprobante ADD CONSTRAINT detalle_comprobante_pk PRIMARY KEY ( comprobante_codcomprobante );
+
+CREATE TABLE preentrega (
+    codcliente                   CHAR(4 BYTE) NOT NULL,
+    comprobante_codcomprobante   CHAR(10 BYTE) NOT NULL,
+    estado                       VARCHAR2(15 CHAR) NOT NULL,
+    comentarios                  VARCHAR2(200 BYTE)
+);
+
+ALTER TABLE preentrega ADD CONSTRAINT preentrega_pk PRIMARY KEY ( codcliente, comprobante_codcomprobante );
+
+CREATE TABLE tienda (
+    codtienda    CHAR(3 BYTE) NOT NULL,
+    desctienda   VARCHAR2(30 BYTE) NOT NULL,
+    telftienda   VARCHAR2(15 BYTE) NOT NULL
+);
+
+ALTER TABLE tienda ADD CONSTRAINT tienda_pk PRIMARY KEY ( codtienda );
+
+CREATE TABLE tipo_comprobante (
+    codtipocompro      CHAR(2 BYTE) NOT NULL,
+    desc_tipo_compro   VARCHAR2(20 CHAR) NOT NULL
+);
+
+ALTER TABLE tipo_comprobante ADD CONSTRAINT tipo_comprobante_pk PRIMARY KEY ( codtipocompro );
+
+CREATE TABLE vendedor (
+    codven             CHAR(10 BYTE) NOT NULL,
+    apepat_ven         VARCHAR2(20 BYTE) NOT NULL,
+    apemat_ven         VARCHAR2(20 BYTE) NOT NULL,
+    nom1ven            VARCHAR2(20 BYTE) NOT NULL,
+    nom2ven            VARCHAR2(20 BYTE),
+    telmovil_ven       VARCHAR2(15 CHAR) NOT NULL,
+    email_ven          VARCHAR2(50 CHAR) NOT NULL,
+    fechaingr          DATE NOT NULL,
+    sueldo             NUMBER(10) NOT NULL,
+    tienda_codtienda   CHAR(3 BYTE) NOT NULL
+);
+
+ALTER TABLE vendedor ADD CONSTRAINT vendedor_pk PRIMARY KEY ( codven );
+
+CREATE TABLE venta (
+    vendedor_codven      CHAR(10 BYTE) NOT NULL,
+    camionetas_codcami   CHAR(21 BYTE) NOT NULL,
+    diaventa             VARCHAR2(15 CHAR)
+);
+
+ALTER TABLE venta ADD CONSTRAINT venta_pk PRIMARY KEY ( vendedor_codven,
+                                                        camionetas_codcami );
+ALTER TABLE cliente
+    ADD CONSTRAINT cliente_camionetas_fk FOREIGN KEY ( camionetas_codcami )
+        REFERENCES camionetas ( codcami )
+            ON DELETE CASCADE;
+
+ALTER TABLE cliente_efectivo
+    ADD CONSTRAINT cliente_efectivo_cliente_fk FOREIGN KEY ( codcliente )
+        REFERENCES cliente ( codcliente );
+
+ALTER TABLE cliente_financonce
+    ADD CONSTRAINT cliente_financonce_cliente_fk FOREIGN KEY ( codcliente )
+        REFERENCES cliente ( codcliente );
+
+ALTER TABLE cliente_multiopcion
+    ADD CONSTRAINT cliente_multiopcion_cliente_fk FOREIGN KEY ( codcliente )
+        REFERENCES cliente ( codcliente );
+
+ALTER TABLE cliente_tarcred
+    ADD CONSTRAINT cliente_tarcred_cliente_fk FOREIGN KEY ( codcliente )
+        REFERENCES cliente ( codcliente );
+
+ALTER TABLE comprobante
+    ADD CONSTRAINT compro_tipo_compro_fk FOREIGN KEY ( tipo_comprobante_codtipocompro )
+        REFERENCES tipo_comprobante ( codtipocompro )
+            ON DELETE CASCADE;
+
+ALTER TABLE comprobante
+    ADD CONSTRAINT comprobante_camionetas_fk FOREIGN KEY ( camionetas_codcami )
+        REFERENCES camionetas ( codcami )
+            ON DELETE CASCADE;
+
+ALTER TABLE comprobante
+    ADD CONSTRAINT comprobante_cliente_fk FOREIGN KEY ( cliente_codcliente )
+        REFERENCES cliente ( codcliente )
+            ON DELETE CASCADE;
+
+ALTER TABLE comprobante
+    ADD CONSTRAINT comprobante_tienda_fk FOREIGN KEY ( tienda_codtienda )
+        REFERENCES tienda ( codtienda )
+            ON DELETE CASCADE;
+
+ALTER TABLE comprobante
+    ADD CONSTRAINT comprobante_vendedor_fk FOREIGN KEY ( vendedor_codven )
+        REFERENCES vendedor ( codven )
+            ON DELETE CASCADE;
+ 
+ALTER TABLE datostarjpropiedad
+    ADD CONSTRAINT datostarjprop_camionetas_fk FOREIGN KEY ( camionetas_codcami )
+        REFERENCES camionetas ( codcami )
+            ON DELETE CASCADE;
+
+ALTER TABLE datostarjpropiedad
+    ADD CONSTRAINT datostarjpropiedad_cliente_fk FOREIGN KEY ( cliente_codcliente )
+        REFERENCES cliente ( codcliente )
+            ON DELETE CASCADE;
+
+ALTER TABLE detalle_comprobante
+    ADD CONSTRAINT detalle_compro_compro_fk FOREIGN KEY ( comprobante_codcomprobante )
+        REFERENCES comprobante ( codcomprobante )
+            ON DELETE CASCADE;
+
+ALTER TABLE preentrega
+    ADD CONSTRAINT preentrega_compro_fk FOREIGN KEY ( comprobante_codcomprobante )
+        REFERENCES comprobante ( codcomprobante )
+            ON DELETE CASCADE;
+
+ALTER TABLE vendedor
+    ADD CONSTRAINT vendedor_tienda_fk FOREIGN KEY ( tienda_codtienda )
+        REFERENCES tienda ( codtienda )
+            ON DELETE CASCADE;
+
+ALTER TABLE venta
+    ADD CONSTRAINT venta_camionetas_fk FOREIGN KEY ( camionetas_codcami )
+        REFERENCES camionetas ( codcami )
+            ON DELETE CASCADE;
+
+ALTER TABLE venta
+    ADD CONSTRAINT venta_vendedor_fk FOREIGN KEY ( vendedor_codven )
+        REFERENCES vendedor ( codven )
+            ON DELETE CASCADE;
+
+ALTER TABLE cliente
+    ADD CONSTRAINT cliente_camionetas_fk FOREIGN KEY ( camionetas_codcami )
+        REFERENCES camionetas ( codcami )
+            ON DELETE CASCADE;
+
+ALTER TABLE cliente_efectivo
+    ADD CONSTRAINT cliente_efectivo_cliente_fk FOREIGN KEY ( codcliente )
+        REFERENCES cliente ( codcliente );
+
+ALTER TABLE cliente_financonce
+    ADD CONSTRAINT cliente_financonce_cliente_fk FOREIGN KEY ( codcliente )
+        REFERENCES cliente ( codcliente );
+
+ALTER TABLE cliente_multiopcion
+    ADD CONSTRAINT cliente_multiopcion_cliente_fk FOREIGN KEY ( codcliente )
+        REFERENCES cliente ( codcliente );
+
+ALTER TABLE cliente_tarcred
+    ADD CONSTRAINT cliente_tarcred_cliente_fk FOREIGN KEY ( codcliente )
+        REFERENCES cliente ( codcliente );
+
+ALTER TABLE comprobante
+    ADD CONSTRAINT compro_tipo_compro_fk FOREIGN KEY ( tipo_comprobante_codtipocompro )
+        REFERENCES tipo_comprobante ( codtipocompro )
+            ON DELETE CASCADE;
+
+ALTER TABLE comprobante
+    ADD CONSTRAINT comprobante_camionetas_fk FOREIGN KEY ( camionetas_codcami )
+        REFERENCES camionetas ( codcami )
+            ON DELETE CASCADE;
+
+ALTER TABLE comprobante
+    ADD CONSTRAINT comprobante_cliente_fk FOREIGN KEY ( cliente_codcliente )
+        REFERENCES cliente ( codcliente )
+            ON DELETE CASCADE;
+
+ALTER TABLE comprobante
+    ADD CONSTRAINT comprobante_tienda_fk FOREIGN KEY ( tienda_codtienda )
+        REFERENCES tienda ( codtienda )
+            ON DELETE CASCADE;
+
+ALTER TABLE comprobante
+    ADD CONSTRAINT comprobante_vendedor_fk FOREIGN KEY ( vendedor_codven )
+        REFERENCES vendedor ( codven )
+            ON DELETE CASCADE;
+
+ALTER TABLE datostarjpropiedad
+    ADD CONSTRAINT datostarjprop_camionetas_fk FOREIGN KEY ( camionetas_codcami )
+        REFERENCES camionetas ( codcami )
+            ON DELETE CASCADE;
+
+ALTER TABLE datostarjpropiedad
+    ADD CONSTRAINT datostarjpropiedad_cliente_fk FOREIGN KEY ( cliente_codcliente )
+        REFERENCES cliente ( codcliente )
+            ON DELETE CASCADE;
+
+ALTER TABLE detalle_comprobante
+    ADD CONSTRAINT detalle_compro_compro_fk FOREIGN KEY ( comprobante_codcomprobante )
+        REFERENCES comprobante ( codcomprobante )
+            ON DELETE CASCADE;
+
+ALTER TABLE preentrega
+    ADD CONSTRAINT preentrega_compro_fk FOREIGN KEY ( comprobante_codcomprobante )
+        REFERENCES comprobante ( codcomprobante )
+            ON DELETE CASCADE;
+
+ALTER TABLE vendedor
+    ADD CONSTRAINT vendedor_tienda_fk FOREIGN KEY ( tienda_codtienda )
+        REFERENCES tienda ( codtienda )
+            ON DELETE CASCADE;
+
+ALTER TABLE venta
+    ADD CONSTRAINT venta_camionetas_fk FOREIGN KEY ( camionetas_codcami )
+        REFERENCES camionetas ( codcami )
+            ON DELETE CASCADE;
+
+ALTER TABLE venta
+    ADD CONSTRAINT venta_vendedor_fk FOREIGN KEY ( vendedor_codven )
+        REFERENCES vendedor ( codven )
+            ON DELETE CASCADE;
